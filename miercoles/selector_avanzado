@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector aun más avanzado D:</title>
+	<style>
+		a[target]{ /*Todas las etiquetas a y con el atribb "target" */
+			background-color: gray;
+		}
+		a[target=_blank]{ /*Abre un hipervínculo en otra página*/
+			background-color: red;
+		} 
+		img{
+			width: 30%;
+			height: 30%;
+		}
+		img[title~=aleman]{ /*Funciona cuando se encuentre aleman*/
+			border: 5px solid red;
+		}
+		img[title~=ruso]{
+			border: 5px solid blue;
+		}
+		p[lang|=en]{ /*Funcoina cuando el valor está al inicio del valor del atributo*/ 
+			background-color: gray;
+		}
+
+		div[class*=test]{ /*Funciona cuando se encuentra el string test sin importar los demás caracteres de una palabra*/
+
+			background-color: #ffff00
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>

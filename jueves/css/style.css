@@ -1,0 +1,28 @@
+p{
+	width: 80%;
+	text-align: justify;
+}
+
+@media screen and (max-width: 1800px) and (min-width: 992px){
+	body{
+		background-color:magenta;
+	}
+}
+
+@media screen and (max-width: 991px) and (min-width: 600px){
+	body{
+		background-color: green;
+	}
+}
+
+@media screen and (max-width: 599px) and (min-width: 400px){
+	body{
+		background-color: pink;
+	}
+}
+
+@media screen and (max-width: 399px) and (min-width: 0px){
+	body{
+		background-color: blue;
+	}
+}

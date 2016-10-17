@@ -1,0 +1,35 @@
+div{
+	width: 100px;
+	height: 100px;
+	background: #00FF3C;
+	font-size: 30px;
+}
+
+.cajaPadre{
+	width: 500px;
+	height: 500px;
+	background: #000000;
+	position: relative;
+}
+
+.caja{
+	/*position: static; /*Ya esta dado por hecho*/
+	/*position: relative; /* variacion respecto a la posicion relativa*/
+	/*position: absolute;/* RESPECTO a la posicion absoluta*/
+	position: fixed; /*Se queda fijo el elemento a pesar de usar el scroll*/
+	top: 100px;
+	bottom: 0px;
+	right: 0px;
+	left: 200px; 
+
+}
+
+img{
+	width: 400px;
+	height: 220px;
+	float: left; /*IMPORTANTE*/
+}
+
+.clear{
+	clear: both;
+}

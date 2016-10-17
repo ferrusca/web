@@ -1,0 +1,13 @@
+h1,div,p,a{
+	background: #ff8000; 
+}
+
+div{
+	width: 400px;
+	/*height: 300px;*/
+	background: #ff8000;
+	margin: 20px 50px; /*top -  */
+	padding: 30px; /*Margen interno*/
+	border:10px solid #000000; /*MARGEN*/
+	display: inline-block; /*Un elemento de bloque se comporta como uno de linea*/
+}

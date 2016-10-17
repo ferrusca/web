@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector aun más avanzado D:</title>
+	<style>
+		a[target]{ /*Todas las etiquetas a y con el atribb "target" */
+			background-color: gray;
+		}
+		a[target=_blank]{ /*Abre un hipervínculo en otra página*/
+			background-color: red;
+		} 
+		img{
+			width: 30%;
+			height: 30%;
+		}
+		img[title~=aleman]{ /*Funciona cuando se encuentre aleman*/
+			border: 5px solid red;
+		}
+		img[title~=ruso]{
+			border: 5px solid blue;
+		}
+		p[lang|=en]{ /*Funcoina cuando el valor está al inicio del valor del atributo*/ 
+			background-color: gray;
+		}
+
+		div[class*=test]{ /*Funciona cuando se encuentra el string test sin importar los demás caracteres de una palabra*/
+			background-color: #ffff00
+		}
+	</style>
+</head>
+<body>
+	<p>Los links con un "target" van a quedar en gris</p>
+
+	<a href="http://www.w3schools.com">w3schools</a>
+	<a href="http://fb.com" target="_blank">xvideos.com</a>
+	<a href="http://toutube.com" target="_top">pornhub.com</a>
+	<a href="http://google.com" target="_blank"></a>
+
+	<p>Se pone en gris todo lo que empieze con "en"</p>
+	<p lang="en">Hello!</p>
+	<p lang="en-us"> Hi! </p>
+	<p lang="en-gb">Ello!</p>
+	<p lang="us">Hi!</p>
+	<p lang="no">Hei!</p>
+
+	<p>Seleccionar solo la clase test</p>
+	<div class="first_test">El primer div.</div>
+	<div class="second">El segundo div</div>
+	<div class="test">Tercer div</div>
+	<p class="test">Esto es un parrafo :v</p>
+
+	<p>Cual es el tanque aleman de los siguientes carros?</p>
+
+	<img src="Imagenes/is7.jpg" title="tanque pesado ruso">
+	<img src="Imagenes/tiger.jpg" title="tanque pesado aleman">
+	<img src="Imagenes/t3485.jpg" title="tanque medio ruso">
+
+</body>
+</html>

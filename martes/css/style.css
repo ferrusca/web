@@ -1,0 +1,84 @@
+h1{
+	color:#ffff;
+	text-align: center;
+}
+body{
+	background-color:#f1f1f1;
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration: none; /*sin subrayado*/
+	color: rgba(); /*el cuarto significa transparencia */
+}
+
+a:hover{ /* cuando se pasa el maus por el link, éste cambia de color*/
+	color:#ccc;
+}
+
+.cabecera{
+	background-color: #000; /*negro*/
+	width: 100%;
+	height: 80px;
+	margin:0;
+}
+li{
+	display:inline;
+}
+.menu{
+	display:inline-block;
+	color:#FFF;
+	margin-top: 5px;
+	margin-right: 20px;
+	text-align:center;
+	background-color:black;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	font-size:12px; 
+}
+
+.nelpastel{
+	display:none; /*oculta el codigo*/
+}
+
+li: hover a{  /*Cuando pases el puntero por el link de una  lista*/
+		background: #ccc;
+		color: #000;
+}
+
+li.active a{ /* todos los elementos a que usen la clase active y que se encuentren en la li-sta*/
+		background: #ccc;
+}
+
+.footer{
+	height: 80px;
+	background-color: gray;
+	border-radius: 50px;
+	/*text-align: */
+	[target=_blank];
+	padding: 0;
+	margin: 0;
+}
+
+.informacion-justificada{
+	width: 30%; /*de manera responsiva para justificado es el 30porciento*/
+	border:1px solid #ccc; /*padding: espacio entre el texto y la cajita*/
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	text-align: justify;
+}
+
+table, th,td {
+	border: 1px solid black; /*borde de la tabla*/
+	border-collapse: collapse; /*se juntan las lineas con none*/
+}
+
+

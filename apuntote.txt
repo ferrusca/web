@@ -1,0 +1,7 @@
+
+Carpetas basicas para un pryoyecto web: css, img y js
+css: estilos
+img: recursos multimedia
+js: javascript, index.html y cualquier otra vista
+
+div, p y h1 son etiquetas debloque.. por tanto hacen salto de linea
